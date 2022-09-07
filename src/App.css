@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+html{
+  scroll-behavior: smooth;
+}
+#top_move_btn_id{
+  position:fixed;
+  top:53vw;
+  right:0.5vw;
+  z-index: 1;
+  border-radius:5px;
+  background-color: #BABDB6;
+  border:none;
+  font-size:1.5vw;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  padding:0.5vw;
+  cursor: pointer;
+
+}
+#top_move_btn_id:hover{
+  background-color: #EEEEEC;
+}
+

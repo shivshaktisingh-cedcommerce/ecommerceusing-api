@@ -1,0 +1,18 @@
+#navbar_main_div_id{
+    width:100%;
+    background-color: #14193D;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 3vw;
+    color:white;
+    font-size:2vw;
+    padding-top:1vw;
+    padding-bottom:1vw;
+   
+}
+
+#navbar_box_id{
+    background-color:#14193D;
+   
+}

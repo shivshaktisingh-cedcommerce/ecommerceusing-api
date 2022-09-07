@@ -1,0 +1,39 @@
+#categories_main_div_id{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#category_main_repetitive_div_id{
+    width:16%;
+    margin-top: 1vw;
+    position:relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+#category_main_repetitive_div_id:hover  #category_name_h3_id{
+    display:block;
+    color:black;
+ }
+#category_image_id{
+    width:100%;
+   
+
+}
+#category_image_id:hover{
+    opacity:0.5;
+}
+#category_name_h3_id{
+    width:100%;
+    color:white;
+    position:absolute;
+    top:3vw;
+    display:none;
+    transition: color 2s;
+    cursor: pointer;
+    
+}
+#category_h5_id{
+    font-size: 1.5vw;
+}
