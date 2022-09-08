@@ -13,6 +13,7 @@ const Datacontext = (props) => {
     const[snackflag,setSnackflag]=useState(false)
     const[post,setPost]=useState()
     const[procategory,setProcategory]=useState()
+    const[registermessage,setRegistermessage]=useState("")
     const[flagproductcategory,setFlagproductcategory]=useState(false)
     const[cart,setCart]=useState([])
     const[cartid,setCartid]=useState([])
@@ -35,7 +36,7 @@ const Datacontext = (props) => {
     // const[flagforloginsignupmodal, setFlagforloginsignupmodal]=useState()
   return (
   <>
-  <dummy.Provider value={{flagmodal, setFlagmodal,searchinput,setSearchinput,flagmodal2, setFlagmodal2,loggedusername,setLoggedusername,snackflag,setSnackflag,totalamount,setTotalamount,cart,setCart,cartid,setCartid,post,setPost,procategory,setProcategory ,flagproductcategory,setFlagproductcategory, flagmodal1 ,setFlagmodal1 ,flagdrawer, setFlagdrawer,userregistration,setUserregistration ,userlogin,setUserlogin,loginflag,setLoginFlag}}>
+  <dummy.Provider value={{flagmodal, setFlagmodal,registermessage,setRegistermessage,searchinput,setSearchinput,flagmodal2, setFlagmodal2,loggedusername,setLoggedusername,snackflag,setSnackflag,totalamount,setTotalamount,cart,setCart,cartid,setCartid,post,setPost,procategory,setProcategory ,flagproductcategory,setFlagproductcategory, flagmodal1 ,setFlagmodal1 ,flagdrawer, setFlagdrawer,userregistration,setUserregistration ,userlogin,setUserlogin,loginflag,setLoginFlag}}>
 {props.children}
   </dummy.Provider>
   </>

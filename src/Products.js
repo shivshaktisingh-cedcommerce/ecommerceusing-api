@@ -110,9 +110,11 @@ export default function Products(props) {
         var password = event.target.password.value;
     
          if(password.length<6){
+            user.setRegistermessage("Password length should be greater than 6")
             return;
          }
          else{ 
+            user.setRegistermessage("")
             user.setUserregistration([...user.userregistration,{id:Math.random() , name:name , email:email , password:password , role:"customer", avatar:"https://png.pngtree.com/png-vector/20190411/ourmid/pngtree-business-male-icon-vector-png-image_916468.jpg"}])
             document.getElementById("login_div_id").style.display="block";
             document.getElementById("register_div_id").style.display="none";
@@ -261,6 +263,7 @@ export default function Products(props) {
             <div id="register_div_id">
                 <p ><span title="click to login" onClick={login_div_fun}><KeyboardBackspaceIcon id="arrow_left_id"/></span></p>
                 <p id="heading_p_id">Create Account</p>
+                <h6 style={{color:"red"}}>{user.registermessage}</h6>
                 <form onSubmit={register_fun}>
                 <p><TextField id="outlined-basic" label="Name" variant="outlined" name="name" required/></p>
                 <p><TextField id="outlined-basic" label="Email" variant="outlined" name="email" type="email" required/></p>
